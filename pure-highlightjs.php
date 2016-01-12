@@ -72,6 +72,7 @@ function pure_highlightjs_admin_assets() {
     if ( in_array( $hook_suffix, array(
             'index.php', # dashboard
             'post.php',
+            'post-new.php',
             'settings_page_pure-highlightjs-config',
         ) ) ) {
         wp_enqueue_script( 'pure-highlightjs', PURE_HIGHLIGHTJS_PLUGIN_URL . 'assets/pure-highlight.js', array(), '0.1.0', true );
@@ -143,6 +144,8 @@ function pure_highlightjs_get_style_list($theme = '') {
 
         $themes[] = substr($filename, 0, - 4);;
     }
+
+    sort($themes);
 
     return $themes;
 }
