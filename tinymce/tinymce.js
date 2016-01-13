@@ -20,7 +20,7 @@
 
         // Add Code Insert Button to toolbar
         editor.addButton('PureHighlightjsInsert', {
-            title : 'Code Insert',
+            title : PureHighlightjsTrans.title,
             icon: 'wp_code',
             onclick: function() {
                 editor.windowManager.open({
