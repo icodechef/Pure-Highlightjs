@@ -130,7 +130,7 @@ function pure_highlightjs_settings_page() {
 function pure_highlightjs_get_style_list($theme = '') {
     $path = PURE_HIGHLIGHTJS_PLUGIN_DIR . 'highlight/styles';
 
-    $themes = [];
+    $themes = array();
     foreach (new DirectoryIterator($path) as $fileInfo) {
         if ($fileInfo->isDot() || ! $fileInfo->isFile()) {
             continue;
