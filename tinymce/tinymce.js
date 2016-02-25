@@ -49,7 +49,7 @@
 
                         var sp = (e.data.addspaces ? '&nbsp;' : '');
 
-                        editor.insertContent(sp + '<pre class="pure-highlightjs"><code class=""' + e.data.lang + '">' + code + '</code></pre>' + sp + '<p></p>');
+                        editor.insertContent(sp + '<pre class="pure-highlightjs"><code class="' + e.data.lang + '">' + code + '</code></pre>' + sp + '<p></p>');
                     }
                 });
             }
